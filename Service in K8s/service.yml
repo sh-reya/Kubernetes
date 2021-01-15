@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: lb
+
+spec:
+  selector:
+    app: shreya
+
+  ports:
+  - targetPort: 80
+    port: 8080
